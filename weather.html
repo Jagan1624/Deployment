@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Premium Real-Time Weather Dashboard"
+    >
+
+    <title>
+        Premium Weather Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <h1>
+            Jagan Portfolio
+        </h1>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="todo.html">
+                        To-Do App
+                    </a>
+                </li>
+
+                <li>
+                    <a href="weather.html">
+                        Weather
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero weather-hero">
+
+            <h2>
+                Real-Time Weather Dashboard
+            </h2>
+
+            <p>
+                Search any city and get
+                live weather updates
+                with dynamic visuals.
+            </p>
+
+        </section>
+
+        <!-- WEATHER SECTION -->
+
+        <section class="weather-section">
+
+            <!-- SEARCH -->
+
+            <div class="weather-search">
+
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter city name..."
+                    aria-label="City Name"
+                >
+
+                <button
+                    id="search-btn"
+                    aria-label="Search Weather"
+                >
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <!-- WEATHER CARD -->
+
+            <div
+                id="weather-card"
+                class="weather-card"
+            >
+
+                <!-- IMAGE -->
+
+                <img
+                    id="weather-image"
+                    src="assets/images/default.jpg"
+                    alt="Weather Background"
+                >
+
+                <!-- OVERLAY -->
+
+                <div class="weather-overlay"></div>
+
+                <!-- CONTENT -->
+
+                <div
+                    id="weather-content"
+                    class="weather-content"
+                >
+
+                    <h3>
+                        Weather Info
+                    </h3>
+
+                    <p>
+                        Search a city above
+                        to view weather details.
+                    </p>
+
+                    <!-- DEFAULT INFO -->
+
+                    <div class="weather-info">
+
+                        <div class="weather-item">
+
+                            🌡 Temperature
+
+                        </div>
+
+                        <div class="weather-item">
+
+                            💧 Humidity
+
+                        </div>
+
+                        <div class="weather-item">
+
+                            🌬 Wind Speed
+
+                        </div>
+
+                        <div class="weather-item">
+
+                            🤒 Feels Like
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EXTRA FEATURE SECTION -->
+
+        <section class="projects-grid">
+
+            <div class="card">
+
+                <h3>
+                    🌤 Dynamic Weather Images
+                </h3>
+
+                <p>
+                    Background changes based
+                    on current weather conditions.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    🌎 Real-Time API
+                </h3>
+
+                <p>
+                    Live weather data fetched
+                    using OpenWeather REST API.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    ⚡ Async JavaScript
+                </h3>
+
+                <p>
+                    Built using Fetch API,
+                    async/await and dynamic rendering.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Jagan Portfolio
+        </p>
+
+    </footer>
+
+    <!-- =========================
+         SCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
